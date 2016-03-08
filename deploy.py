@@ -111,11 +111,11 @@ def wordpress_setup():
 
 @task
 def first_time_setup():
-    # update_upgrade()
-    # install_os_dependencies()
-    # setup_swapfile()
-    # setup_mysql()
-    # create_mysql_user()
-    # create_mysql_database()
-    # mysql_grant_privileges()
+    update_upgrade()
+    install_os_dependencies()
+    setup_swapfile()
+    setup_mysql()
+    create_mysql_user()
+    create_mysql_database()
+    mysql_grant_privileges()
     wordpress_setup()

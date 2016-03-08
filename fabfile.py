@@ -1,4 +1,3 @@
-from os import getenv
 from fabric.api import env, task
 
 from deploy import *
@@ -8,11 +7,11 @@ from deploy import *
 @task
 def live():
     # Hosts
-    env.hosts = ['107.170.223.166']
-    # Ubuntu_user
+    env.hosts = ['198.199.114.148']
+    # Ubuntu user
     env.user = 'root'
-    # Ubuntu_user_group
-    env.group = env.user
+    # Ubuntu password
+    env.password = '733743fd450ed290'
 
     # Database settings
     env.mysql_root_user = 'root'
